@@ -10,10 +10,10 @@
       font-family: "Microsoft YaHei", sans-serif;
       margin: 0;
       padding: 20px;
-      background: linear-gradient(135deg, #ff0057, #6a00ff, #00e5ff);
+      background: linear-gradient(45deg, #FF6F61, #FFD700, #1E90FF);
       background-size: 400% 400%;
-      animation: bgMove 12s infinite;
-      color: #fff;
+      animation: bgMove 10s ease infinite;
+      color: white;
     }
 
     @keyframes bgMove {
@@ -25,15 +25,15 @@
     h1 {
       text-align: center;
       font-size: 3em;
-      letter-spacing: 5px;
-      text-shadow: 3px 3px 10px #000;
-      margin-top: 20px;
+      color: #fff;
+      text-shadow: 3px 3px 15px #000;
+      margin-top: 50px;
     }
 
     .card-container {
       max-width: 800px;
       margin: 30px auto;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.7);
       padding: 25px;
       border-radius: 15px;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
@@ -42,10 +42,10 @@
 
     .sticker {
       position: absolute;
-      top: -30px;
-      right: -30px;
-      width: 90px;
-      height: 90px;
+      top: -40px;
+      right: -40px;
+      width: 100px;
+      height: 100px;
       background: url("https://cdn-icons-png.flaticon.com/512/727/727245.png") no-repeat center;
       background-size: contain;
       transform: rotate(-15deg);
@@ -62,14 +62,14 @@
       width: 200px;
       height: 200px;
       object-fit: cover;
-      border-radius: 10px;
-      border: 3px solid #ddd;
+      border-radius: 15px;
+      border: 4px solid #f5f5f5;
     }
 
     .student-info h3 {
       margin-top: 0;
       font-size: 2.5em;
-      color: #fff;
+      color: #FFD700;
     }
 
     .student-info p {
@@ -81,12 +81,12 @@
     .section-title {
       margin-top: 20px;
       font-size: 1.2em;
-      color: #ffeb3b;
+      color: #FF6347;
       text-transform: uppercase;
     }
 
     .social-links a {
-      color: #00e5ff;
+      color: #1E90FF;
       text-decoration: none;
       font-weight: bold;
     }
@@ -96,15 +96,17 @@
     }
 
     .section {
-      margin-top: 30px;
-    }
-
-    .hobby-info p, .dream-info p, .pet-info p, .game-info p, .study-info p {
-      font-size: 1.1em;
-    }
-
-    .social-links {
       margin-top: 20px;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #FFD700;
     }
   </style>
 </head>
@@ -120,9 +122,9 @@
       <img src="你的照片.jpeg" alt="榮宛靈">
       <div class="student-info">
         <h3>榮宛靈 / Thanyalak Sirisawat</h3>
-        <p>國籍：泰國 ｜ 年齡：18</p>
-        <p>興趣：聽音樂、運動</p>
-        <p>想體驗：文化、美食、中文學習</p>
+        <p><strong>國籍：</strong>泰國 ｜ <strong>年齡：</strong>18</p>
+        <p><strong>興趣：</strong>聽音樂、運動</p>
+        <p><strong>想體驗：</strong>文化、美食、中文學習</p>
       </div>
     </div>
 
@@ -130,7 +132,7 @@
     <div class="section">
       <h3 class="section-title">音樂和喜好</h3>
       <p><strong>最喜歡的音樂：</strong>Hip-hop</p>
-      <p><strong>喜歡的泰國rapper：</strong>Youngohm、Saran、Illslick、Youngtarr</p>
+      <p><strong>喜歡的泰國rapper：</strong>Youngohm、Saran、Illslick、Yungtarr</p>
       <p><strong>喜歡的國際rapper：</strong>Central Cee、Eminem、Lil Mosey</p>
     </div>
 
