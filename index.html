@@ -1,134 +1,181 @@
-
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> - 榮宛靈 </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> 榮宛靈</title>
 
-  <style>
-    body {
-      font-family: "Microsoft YaHei", sans-serif;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 20px;
-    }
+<style>
+body{
+  margin:0;
+  padding:20px;
+  font-family: "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg,#ff0057,#7b00ff,#00d4ff);
+  background-size: 400% 400%;
+  animation: bgMove 10s infinite;
+  color:white;
+}
 
-    h1 {
-      text-align: center;
-      color: #333;
-    }
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
-    .card-container {
-      max-width: 800px;
-      background: white;
-      margin: 30px auto;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+h1{
+  text-align:center;
+  font-size:3em;
+  letter-spacing:4px;
+  text-shadow:3px 3px 10px black;
+}
 
-    .student-card {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+.card{
+  max-width:850px;
+  margin:30px auto;
+  background: rgba(0,0,0,0.75);
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 0 30px rgba(0,0,0,0.7);
+  position:relative;
+}
 
-    .student-card img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 3px solid #ddd;
-    }
+.sticker{
+  position:absolute;
+  top:-25px;
+  right:-25px;
+  width:80px;
+  height:80px;
+  background:url("https://cdn-icons-png.flaticon.com/512/616/616494.png") no-repeat center;
+  background-size:contain;
+  transform: rotate(-15deg);
+}
 
-    .student-info h3 {
-      margin-top: 0;
-      color: #444;
-    }
+.profile{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  align-items:center;
+}
 
-    .student-info p {
-      margin: 6px 0;
-      color: #555;
-    }
+.profile img{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  border-radius:15px;
+  border:4px solid #fff;
+}
 
-    .section-title {
-      margin-top: 20px;
-      color: #444;
-      font-size: 1.2em;
-    }
+.profile h2{
+  font-size:2em;
+  margin:0;
+}
 
-    .social-links a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
+.section{
+  margin-top:25px;
+}
 
-    .social-links a:hover {
-      text-decoration: underline;
-    }
+.section h3{
+  color:#ffea00;
+  margin-bottom:10px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
 
-    .pet-info p, .hobby-info p, .dream-info p {
-      font-size: 1em;
-    }
-  </style>
+.section p{
+  margin:6px 0;
+  font-size:1.1em;
+}
+
+.social a{
+  color:#00e5ff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.social a:hover{
+  text-decoration:underline;
+}
+</style>
 </head>
+
 <body>
 
-  <h1>個人介紹</h1>
+<h1>個人介紹</h1>
 
-  <div class="card-container">
-    <div class="student-card">
-      <!-- 🔸你的個人照片：等你提供後我會放進來 -->
-      <image src="你的照片.jpeg" alt="你的照片">
-      
-      <div class="student-info">
-        <h3>荣宛灵 / Thanyalak Sirisawat</h3>
-        <p>國籍：泰國｜年齡：18</p>
-        <p>興趣：聽音樂、運動</p>
-        <p>想體驗：文化、美食、中文學習</p>
-      </div>
-    </div>
+<div class="card">
+<div class="sticker"></div>
 
-    <!-- 新增部分：興趣和喜好 -->
-    <div class="hobby-info">
-      <p><strong>最喜歡的音樂：</strong>Hip-hop</p>
-      <p><strong>喜歡的泰國rapper：</strong>Youngohm、Saran、Illslick,yungtarr</p>
-      <p><strong>喜歡的國際rapper：</strong>Central Cee、Eminem、Lil Mosey</p>
-      <p><strong>喜歡的運動：</strong>籃球、足球</p>
-      <p><strong>最喜歡的籃球員：</strong>Lamine Yamal</p>
-    </div>
-
-    <!-- 新增部分：寵物 -->
-    <div class="pet-info">
-      <p><strong>狗：</strong>mŏo-dtŭn、mŏo-yor、yoo-roh</p>
-      <p><strong>貓：</strong>oh-líiang、dìieow</p>
-    </div>
-
-    <!-- 新增部分：社交媒體 -->
-    <div class="social-links">
-      <p><strong>Instagram：</strong><a href="https://www.instagram.com/sudlorsoybad" target="_blank">@sualorsoybad</a></p>
-      <p><strong>Facebook：</strong><a href="https://www.facebook.com/ThanyalakSirisawat" target="_blank">Thanyalak Sirisawat</a></p>
-    </div>
-
-    <!-- 新增部分：夢想與目標 -->
-    <div class="dream-info">
-      <p><strong>我的夢想：</strong>成為一名知名的rapper，並且能夠唱自己的音樂。</p>
-      <p><strong>我的優點：</strong>堅持、學習快速。</p>
-      <p><strong>我的缺點：</strong>害羞，不喜歡在很多人面前做事情。</p>
-    </div>
-
-    <!-- 新增部分：遊戲 -->
-    <div class="game-info">
-      <p><strong>喜歡的遊戲：</strong>ROV、Free Fire</p>
-    </div>
-
-    <!-- 新增部分：台灣留學經歷 -->
-    <div class="study-info">
-      <p><strong>台灣留學經歷：</strong>來台灣兩個月，雖然語言有點困難，但看到很多優秀的籃球員，這給了我很大的動力，讓我更有信心繼續學習。</p>
-    </div>
-
+<div class="profile">
+  <img src="你的照片.jpeg" alt="你的照片.jpeg">
+  <div>
+    <h2>榮宛靈<br>Thanyalak Sirisawat</h2>
+    <p>國籍：泰國 ｜ 年齡：18</p>
+    <p>興趣：聽音樂、運動</p>
   </div>
+</div>
+
+<div class="section">
+<h3>Music & Style</h3>
+<p><strong>最喜歡的音樂：</strong>Hip-hop</p>
+<p><strong>泰國 Rapper：</strong>Youngohm、Saran、Illslick、Youngtarr</p>
+<p><strong>國際 Rapper：</strong>Central Cee、Eminem、Lil Mosey</p>
+</div>
+
+<div class="section">
+<h3>Sports</h3>
+<p><strong>喜歡的運動：</strong>籃球、足球</p>
+<p><strong>喜歡的籃球員：</strong>LaMelo Ball、Ja Morant</p>
+<p><strong>喜歡的足球員：</strong>Lamine Yamal</p>
+</div>
+
+<div class="section">
+<h3>Pets</h3>
+<p><strong>狗 3 隻：</strong>mŏo-dtŭn、mŏo-yor、yoo-roh</p>
+<p><strong>貓 2 ตัว：</strong>oh-líiang、dìieow</p>
+</div>
+
+<div class="section social">
+<h3>Social Media</h3>
+<p>Instagram：<a href="https://www.instagram.com/sudlorsoybad" target="_blank">@sudlorsoybad</a></p>
+<p>Facebook：<a href="https://www.facebook.com/ThanyalakSirisawat" target="_blank">Thanyalak Sirisawat</a></p>
+</div>
+
+<div class="section">
+<h3>Dream</h3>
+<p><strong>ความฝัน：</strong>อยากเป็น Rapper มากที่สุด และอยากร้องเพลงของตัวเอง</p>
+</div>
+
+<div class="section">
+<h3>Strength & Weakness</h3>
+<p><strong>จุดแข็ง：</strong>อดทน เรียนรู้ไว แต่เรื่องยาก ๆ ยังต้องใช้เวลา</p>
+<p><strong>จุดอ่อน：</strong>ขี้อายมาก ไม่ชอบทำอะไรต่อหน้าคนเยอะ ๆ</p>
+</div>
+
+<div class="section">
+<h3>Free Time</h3>
+<p>ฟังเพลง เล่น TikTok (Douyin) เล่นเกม ROV, Free Fire</p>
+</div>
+
+<div class="section">
+<h3>Taiwan Experience</h3>
+<p>
+มาเรียนที่ไต้หวัน 2 เดือน ยากมาก ภาษาก็ยาก  
+แต่ได้กำลังใจจากการเห็นนักบาสที่หล่อ สูง ขาว ครบทุกอย่าง  
+ทำให้มีแรงใจมาเรียนจนถึงทุกวันนี้
+</p>
+</div>
+
+<div class="section">
+<h3>Work Experience</h3>
+<p>
+เคยทำงานโรงงานสายไฟที่ประเทศไทย  
+งานเหนื่อย ปวดหัว ต้องใช้ความเร็ว หัวหน้าไม่ดี  
+เป็นประสบการณ์ที่แย่ที่สุด แต่ทำให้ฉันแข็งแรงขึ้น
+</p>
+</div>
+
+</div>
 
 </body>
 </html>
+
